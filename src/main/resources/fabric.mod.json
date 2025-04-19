@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "tonemap",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Tonemapping Shader",
+  "description": "This mod adds a tonemap to BTA that renders the world in beautiful 16-bit retro color. Recommended: Vignette: Off, Render Scale: 0.25x, Lightmap Style: Colorized",
   "authors": [
-    "Turnip Labs"
+    "Matt"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"matt.tonemap.Tonemap"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"matt.tonemap.Tonemap"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"matt.tonemap.Tonemap"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"matt.tonemap.Tonemap"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "tonemap.mixins.json"
   ],
 
   "depends": {
