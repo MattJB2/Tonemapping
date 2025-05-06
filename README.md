@@ -1,37 +1,18 @@
-# Example Mod
+Make BTA look like a retro thingy!
 
-Template for making Babric mods for BTA!
+This mod tonemaps the game to an 8-bit color palette, something akin to the PSX or Sega Saturn era.
 
-**Note: *DO NOT fork this repository unless you want to contribute!***
+Currently, there is no toggle, the mod is always on if it is in your mods folder.
 
-## Prerequisites
-- JDK for Java 17 ([Eclipse Temurin](https://adoptium.net/temurin/releases/) recommended)
-- [Intellij IDEA](https://www.jetbrains.com/idea/download/) (Scroll down for the free community edition, if using linux **DO NOT** use the flatpak distribution)
-- Minecraft Development plugin (Optional, but highly recommended)
+Recommended settings:
 
-## Setup instructions
-   
+Vignette: off
+Render Scale: 0.25x
+Lightmap Style: Colorized 
 
-1. Click the `Use this template` button on this repo's page above (Will only appear if logged in). Choose `Create a new repository`, you will be redirected to a new page. Enter your repo's name and description, and hit `Create repository`.  
-   To get your project, open IntelliJ IDEA and click `Get from VCS`. Select `Repository URL` and enter your repo's url
-
-2. After the project has finished importing, close it and open it again.  
-   If that does not work, open the right sidebar with `Gradle` on it, open `Tasks` > `fabric` and run `ideaSyncTask`.
-
-3. Create a new run configuration by going in `Run > Edit Configurations`.  
-   Then click on the plus icon and select Gradle. In the `Tasks and Arguments` field enter `build`.  
-   Running it will build your finished jar files and put them in `build/libs/`.
-
-4. Lastly, open `File` > `Settings` and head to `Build, Execution, Development` > `Build Tools` > `Gradle`.  
-   Make sure `Build and run using` and `Run tests using` is set to `Gradle`.
-
-5. Done! Now, all that's left is to change every mention of `examplemod` and `turniplabs` to your own mod id and mod group, respectively. Happy modding!
-
-## Tips
-
-1. If you haven't already you should join the BTA modding discord! https://discord.gg/FTUNJhswBT
-2. You can set your username when launching the client run configuration by setting `--username <username>` in your program arguments.
-3. When launching the server run configuration you may want to remove the `nogui` program argument in order to see the regular server GUI.
-4. In Intellij you can double press shift or press ctrl+N to search class files, change the search from the default `Project Files` to `All Places` you can easily explore the classes for you dependencies and even BTA itself.
-5. In Intellij if ctrl+left click on a field or method you can quickly get information on when and where that field or method is assign or used.
-
+Photos:
+![image](https://github.com/user-attachments/assets/7fd3b2cb-e7ff-46df-a672-f7921363fee5)
+![image](https://github.com/user-attachments/assets/1816f6ef-0929-4a03-bd1d-c0f23e676eb8)
+![image](https://github.com/user-attachments/assets/8f99a522-caac-4eda-9dac-0dd847f97c39)
+![image](https://github.com/user-attachments/assets/9f32cd93-554b-476d-b0f8-bdbe78a0126d)
+![2025-05-06_02 52 02](https://github.com/user-attachments/assets/d99bde00-4837-42d1-9486-942a89ebe54b)
