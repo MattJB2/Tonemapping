@@ -1,5 +1,6 @@
 package matt.tonemap;
 
+import matt.tonemap.config.TonemapConfig;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.Minecraft;
 import org.slf4j.Logger;
@@ -14,7 +15,8 @@ public class Tonemap implements ModInitializer, RecipeEntrypoint, GameStartEntry
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Tonemap initialized.");
+		TonemapConfig.load();
+		LOGGER.info("Tonemap initialized.");
     }
 
 	@Override
