@@ -12,6 +12,7 @@ uniform float height;
 
 varying vec2 texcoord;
 
+//hardcoded pallette
 const int PALETTE_SIZE = 256;
 const vec3 palette[PALETTE_SIZE] = vec3[](
 vec3(0.000, 0.000, 0.000),
@@ -327,6 +328,7 @@ vec3 cbCorrection(vec3 tex)
 	return correction;
 }
 
+//search every color in the pallette to find the closest match
 vec3 otherClosestColor(vec3 color){
     float bestDistance = 1000.0;
     vec3 bestColor = vec3(0.0, 0.0, 0.0);

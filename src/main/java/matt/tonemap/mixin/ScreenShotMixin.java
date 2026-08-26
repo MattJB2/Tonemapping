@@ -285,7 +285,7 @@ public abstract class ScreenShotMixin {
 		remap = false
 	)
 	private static void applyTonemap(File mcDir, int width, int height, CallbackInfoReturnable<String> cir) {
-		//Can't just use the shader because fuck me i guess, so let's do it again for the screenshot woohoo
+		//Can't use default shader in photomode, so we perform the tonemap in the screenshot method itself 
 		System.out.println("[Tonemap] Screenshot inject is active.");
 		for (int i = 0; i < imageData.length; i++) {
 			int argb = imageData[i];
